@@ -1,0 +1,138 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-box {
+  flex: 1;
+  width: 100%;
+  max-width: 50%;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.display-box {
+  flex: 1;
+  width: 100%;
+  max-width: 50%;
+  text-align: left;
+}
+
+h2 {
+  margin: 0;
+  padding: 8px 0;
+  background-color: #007bff;
+  color: white;
+}
+
+hr {
+  border-top: 2px solid #007bff;
+  border-bottom: none;
+  margin-top: 0;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.display {
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  min-height: 500px;
+}
+
+.c {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-box,
+  .display-box {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+}
